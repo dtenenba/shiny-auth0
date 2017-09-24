@@ -56,7 +56,7 @@ app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/reports/', reports);
-app.use('/', routes);
+// app.use('/', routes);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

@@ -1,7 +1,8 @@
 var express = require('express');
 var passport = require('passport');
 var httpProxy = require('http-proxy');
-var ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn()
+// var ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn()
+var ensureLoggedIn = function() {}
 var router = express.Router();
 
 var proxy = httpProxy.createProxyServer({

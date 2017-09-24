@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    node:
+        build: ./node
+        links:
+            - shiny
+        ports:
+            - "5050:5050"
+    shiny:
+        build: shiny
